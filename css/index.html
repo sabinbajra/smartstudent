@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Student - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Smart Student</h1>
+        <nav>
+          <ul class="menu">
+            <li class="menu__item" value="home"><a>Home</a></li>
+            <li class="menu__item" value="about"><a>About</a></li>
+            <li class="menu__item" value="developers"><a>Developers</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="left-nav">
+        <h2>Analyze Division</h2>
+        <div class="dropdown">
+          <button class="dropdown-btn">Categories</button>
+          <div class="dropdown-content">
+            <a class="menu__item" value="hoursstudied">Hours Studied</a>
+            <a class="menu__item" value="previousscore">Previous Score</a>
+            <a class="menu__item" value="attendance">Attendance</a>
+            <a class="menu__item" value="sleephours">Sleep Hours</a>
+          </div>
+        </div>
+
+        <h3>Analysis Tools</h3>
+        <ul>
+          <li class="menu__item" value="decisiontree">
+            <a>Decision Tree Analysis</a>
+          </li>
+          <li class="menu__item" value="knn"><a>KNN Analysis</a></li>
+          <li class="menu__item" value="heatmap"><a>Heatmap</a></li>
+        </ul>
+      </section>
+
+      <section class="main-content" id="container"></section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Smart Student. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
