@@ -186,18 +186,21 @@ main {
 
 /* Footer design */
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   background-color: #161b22;
   color: #c9d1d9;
   text-align: center;
   padding: 15px;
-  margin-top: 20px;
   border-top: 1px solid #58a6ff;
+  z-index: 100; /* Ensures the footer stays above other elements */
 }
 
 footer p {
   margin: 0;
 }
-
 
 /* Developer Section Styles */
 .developer {
@@ -212,4 +215,82 @@ footer p {
   border-radius: 50%;
   margin-right: 15px;
   border: 2px solid #58a6ff;
+}
+
+/* For tablets and medium-sized screens (768px and up) */
+@media screen and (max-width: 1024px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav .menu li a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .left-nav {
+    width: 30%;
+  }
+
+  .main-content {
+    width: 70%;
+    padding: 1.5rem;
+  }
+}
+
+/* For mobile devices and small screens (768px and below) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  nav .menu {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .left-nav {
+    display: none; /* Hide the left navigation bar on small screens */
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/* For very small devices (480px and below) */
+@media screen and (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav .menu li a {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
